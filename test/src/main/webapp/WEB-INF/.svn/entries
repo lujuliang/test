@@ -1,0 +1,71 @@
+10
+
+dir
+2
+https://vivian-pc/svn/good/good/WebContent/WEB-INF
+https://vivian-pc/svn/good
+
+
+
+2015-09-20T10:00:34.401622Z
+2
+admin
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+4bccf5a8-e5de-6449-8930-1542d4793025
+
+classes
+dir
+
+lib
+dir
+
+views
+dir
+
+web.xml
+file
+
+
+
+
+2015-08-25T23:13:54.670000Z
+6308c07becd46d03f917b4a17d6fa6db
+2015-09-20T10:00:34.401622Z
+2
+admin
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1539
+

@@ -1,0 +1,69 @@
+﻿<!doctype html>
+<html>
+  <head>
+  <title></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+ <script type="text/javascript" src="js/jquery.min.js"></script>
+  
+  <script type="text/javascript">
+  function btn_click2(){
+		var data = {"id":1,"name":"test"};
+	 	  $.ajax({
+	 		  type:"POST",
+			  url:"dispatcher/sysUser/insertUser", 
+	 		  dataType:"json",
+	 		  contentType:"application/json",
+	  		  data:JSON.stringify(data),
+	 		  success:function(data){
+	 		  	alert(data.success);
+	 		  }
+	 		  });
+	  }
+  </script>
+  
+  <style>
+  body {
+    margin:0; 
+    padding:0;
+    background:#FFFFA6;
+  }
+ 
+  #main a{
+    display:block;
+    border:5px solid #29D9C2;
+    width:60%;
+    height:50px;
+    margin:5% auto;
+  }
+  
+  @media screen and (min-width: 300px) {
+    #main {
+      width:90%;
+      margin:0 auto;
+    }
+    
+    #main > a:first-child {
+       margin-right:5%;
+    }
+    
+    #main a{
+      float:left;
+      width:45%;
+    }
+  }
+  </style>
+  </head>
+  <body>
+    <div id="container">
+      <header>
+      </header>
+      
+      <div id="main"  style="text-align:center;line-height: 50px; ">
+          <input type="button" onclick="btn_click2()" value="确定">
+      </div>
+      
+      <footer>
+      </footer>
+    </div>
+  </body>
+</html>
